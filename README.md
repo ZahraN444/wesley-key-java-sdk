@@ -15,12 +15,12 @@ Install the SDK by adding the following dependency in your project's pom.xml fil
 <dependency>
   <groupId>io.github.zahran444</groupId>
   <artifactId>wesley-key-sdk</artifactId>
-  <version>0.1.2</version>
+  <version>0.1.3</version>
 </dependency>
 ```
 
 You can also view the package at:
-https://central.sonatype.com/artifact/io.github.zahran444/wesley-key-sdk/0.1.2
+https://central.sonatype.com/artifact/io.github.zahran444/wesley-key-sdk/0.1.3
 
 ## Test the SDK
 
@@ -34,7 +34,7 @@ In Eclipse, for running the tests do the following:
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -42,10 +42,10 @@ The following parameters are configurable for the API Client:
 |  --- | --- | --- |
 | testHeader | `String` | This is a test header<br>*Default*: `"TestHeaderDefaultValue"` |
 | environment | `Environment` | The API environment. <br> **Default: `Environment.PRODUCTION`** |
-| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
-| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
-| httpBasicCredentials | [`HttpBasicCredentials`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
-| petstoreAuthCredentials | [`PetstoreAuthCredentials`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/auth/oauth-2-implicit-grant.md) | The Credentials Setter for OAuth 2 Implicit Grant |
+| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
+| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
+| httpBasicCredentials | [`HttpBasicCredentials`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
+| petstoreAuthCredentials | [`PetstoreAuthCredentials`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/auth/oauth-2-implicit-grant.md) | The Credentials Setter for OAuth 2 Implicit Grant |
 
 The API client can be initialized as follows:
 
@@ -108,40 +108,40 @@ The SDK can be configured to use a different environment for making API calls. A
 
 This API uses the following authentication schemes.
 
-* [`api_key (Custom Header Signature)`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/auth/custom-header-signature.md)
-* [`httpBasic (Basic Authentication)`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/auth/basic-authentication.md)
-* [`petstore_auth (OAuth 2 Implicit Grant)`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/auth/oauth-2-implicit-grant.md)
+* [`api_key (Custom Header Signature)`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/auth/custom-header-signature.md)
+* [`httpBasic (Basic Authentication)`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/auth/basic-authentication.md)
+* [`petstore_auth (OAuth 2 Implicit Grant)`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/auth/oauth-2-implicit-grant.md)
 
 ## List of APIs
 
-* [Pet](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/controllers/pet.md)
-* [Store](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/controllers/store.md)
-* [User](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/controllers/user.md)
+* [Pet](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/controllers/pet.md)
+* [Store](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/controllers/store.md)
+* [User](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/controllers/user.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [Configuration Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/configuration-interface.md)
-* [HttpClientConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-client-configuration.md)
-* [HttpClientConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-client-configuration-builder.md)
-* [HttpProxyConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-proxy-configuration.md)
-* [HttpProxyConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-proxy-configuration-builder.md)
+* [Configuration Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/configuration-interface.md)
+* [HttpClientConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-client-configuration.md)
+* [HttpClientConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-client-configuration-builder.md)
+* [HttpProxyConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-proxy-configuration.md)
+* [HttpProxyConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-proxy-configuration-builder.md)
 
 ### HTTP
 
-* [Headers](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/headers.md)
-* [HttpCallback Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-callback-interface.md)
-* [HttpContext](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-context.md)
-* [HttpBodyRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-body-request.md)
-* [HttpRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-request.md)
-* [HttpResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/http-string-response.md)
+* [Headers](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/headers.md)
+* [HttpCallback Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-callback-interface.md)
+* [HttpContext](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-context.md)
+* [HttpBodyRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-body-request.md)
+* [HttpRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-request.md)
+* [HttpResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/http-string-response.md)
 
 ### Utilities
 
-* [ApiException](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/api-exception.md)
-* [ApiHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/api-helper.md)
-* [FileWrapper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/file-wrapper.md)
-* [DateTimeHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.2/doc/date-time-helper.md)
+* [ApiException](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/api-exception.md)
+* [ApiHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/api-helper.md)
+* [FileWrapper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/file-wrapper.md)
+* [DateTimeHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/0.1.3/doc/date-time-helper.md)
 

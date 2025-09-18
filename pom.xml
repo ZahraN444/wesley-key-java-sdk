@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.zahran444</groupId>
   <artifactId>wesley-key-sdk</artifactId>
-  <version>0.1.2</version>
+  <version>0.1.3</version>
   <packaging>jar</packaging>
   <name>Wesley Key SDK</name>
   <description>Omnis nisi cumque si</description>
