@@ -24,10 +24,10 @@ To configure the SDK to use a proxy server, initialize the proxy configuration d
 ## Usage Example
 
 ```java
-import io.swagger.petstore.SwaggerPetstoreClient;
-import io.swagger.petstore.http.client.HttpProxyConfiguration;
+import com.example.www.CypressTestAPIClient;
+import com.example.www.http.client.HttpProxyConfiguration;
 
-SwaggerPetstoreClient client = new SwaggerPetstoreClient.Builder()
+CypressTestAPIClient client = new CypressTestAPIClient.Builder()
   .httpClientConfig(configBuilder -> configBuilder
       .proxyConfig(new HttpProxyConfiguration.Builder("http://localhost",
           8080).auth("username", "password")))
