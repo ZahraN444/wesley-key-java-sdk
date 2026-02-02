@@ -15,7 +15,6 @@ The API client can be initialized as follows:
 import com.example.www.CypressTestAPIClient;
 import com.example.www.Environment;
 import com.example.www.exceptions.ApiException;
-import java.io.IOException;
 
 public class Program {
     public static void main(String[] args) {
