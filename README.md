@@ -13,12 +13,12 @@ Install the SDK by adding the following dependency in your project's pom.xml fil
 <dependency>
   <groupId>io.github.zahran444</groupId>
   <artifactId>wesley-key-sdk</artifactId>
-  <version>3.0.4</version>
+  <version>3.0.5</version>
 </dependency>
 ```
 
 You can also view the package at:
-https://central.sonatype.com/artifact/io.github.zahran444/wesley-key-sdk/3.0.4
+https://central.sonatype.com/artifact/io.github.zahran444/wesley-key-sdk/3.0.5
 
 ## Test the SDK
 
@@ -32,15 +32,15 @@ In Eclipse, for running the tests do the following:
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
 | Parameter | Type | Description |
 |  --- | --- | --- |
 | defaultHost | `String` | *Default*: `"www.example.com"` |
-| environment | `Environment` | The API environment. <br> **Default: `Environment.PRODUCTION`** |
-| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
+| environment | [`Environment`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/README.md#environments) | The API environment. <br> **Default: `Environment.PRODUCTION`** |
+| httpClientConfig | [`Consumer<HttpClientConfiguration.Builder>`](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-client-configuration-builder.md) | Set up Http Client Configuration instance. |
 
 The API client can be initialized as follows:
 
@@ -62,34 +62,44 @@ public class Program {
 }
 ```
 
+## Environments
+
+The SDK can be configured to use a different environment for making API calls. Available environments are:
+
+### Fields
+
+| Name | Description |
+|  --- | --- |
+| PRODUCTION | **Default** |
+
 ## List of APIs
 
-* [API](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/controllers/api.md)
+* [API](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/controllers/api.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [Configuration Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/configuration-interface.md)
-* [HttpClientConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-client-configuration.md)
-* [HttpClientConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-client-configuration-builder.md)
-* [HttpProxyConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-proxy-configuration.md)
-* [HttpProxyConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-proxy-configuration-builder.md)
+* [Configuration Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/configuration-interface.md)
+* [HttpClientConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-client-configuration.md)
+* [HttpClientConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-client-configuration-builder.md)
+* [HttpProxyConfiguration](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-proxy-configuration.md)
+* [HttpProxyConfiguration.Builder](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-proxy-configuration-builder.md)
 
 ### HTTP
 
-* [Headers](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/headers.md)
-* [HttpCallback Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-callback-interface.md)
-* [HttpContext](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-context.md)
-* [HttpBodyRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-body-request.md)
-* [HttpRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-request.md)
-* [HttpResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-response.md)
-* [HttpStringResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/http-string-response.md)
+* [Headers](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/headers.md)
+* [HttpCallback Interface](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-callback-interface.md)
+* [HttpContext](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-context.md)
+* [HttpBodyRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-body-request.md)
+* [HttpRequest](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-request.md)
+* [HttpResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-response.md)
+* [HttpStringResponse](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/http-string-response.md)
 
 ### Utilities
 
-* [ApiException](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/api-exception.md)
-* [ApiHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/api-helper.md)
-* [FileWrapper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/file-wrapper.md)
-* [DateTimeHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.4/doc/date-time-helper.md)
+* [ApiException](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/api-exception.md)
+* [ApiHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/api-helper.md)
+* [FileWrapper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/file-wrapper.md)
+* [DateTimeHelper](https://www.github.com/ZahraN444/wesley-key-java-sdk/tree/3.0.5/doc/date-time-helper.md)
 
