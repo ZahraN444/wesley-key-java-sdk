@@ -24,10 +24,10 @@ To configure the SDK to use a proxy server, initialize the proxy configuration d
 ## Usage Example
 
 ```java
-import com.example.www.CypressTestAPIClient;
-import com.example.www.http.client.HttpProxyConfiguration;
+import localhost3000.WebhooksAndCallbacksAPIClient;
+import localhost3000.http.client.HttpProxyConfiguration;
 
-CypressTestAPIClient client = new CypressTestAPIClient.Builder()
+WebhooksAndCallbacksAPIClient client = new WebhooksAndCallbacksAPIClient.Builder()
   .httpClientConfig(configBuilder -> configBuilder
       .proxyConfig(new HttpProxyConfiguration.Builder("http://localhost",
           8080).auth("username", "password")))
