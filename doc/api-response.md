@@ -15,7 +15,7 @@ Represents the result of an API call, including response metadata and the return
 
 ```java
 import java.io.IOException;
-import localhost3000.exceptions;
+import io.swagger.petstore3.exceptions;
 
 exampleController.getExampleTypeAsync(body).thenAccept(result -> {
     // success callback handler

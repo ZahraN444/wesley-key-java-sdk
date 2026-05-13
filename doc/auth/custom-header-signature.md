@@ -3,13 +3,13 @@
 
 
 
-Documentation for accessing and setting credentials for ApiKey.
+Documentation for accessing and setting credentials for api_key.
 
 ## Auth Credentials
 
 | Name | Type | Description | Setter | Getter |
 |  --- | --- | --- | --- | --- |
-| X-API-Key | `String` | API key for authentication | `xAPIKey` | `getXAPIKey()` |
+| api_key | `String` | - | `apiKey` | `getApiKey()` |
 
 
 
@@ -22,14 +22,14 @@ Documentation for accessing and setting credentials for ApiKey.
 You must provide credentials in the client as shown in the following code snippet.
 
 ```java
-import localhost3000.WebhooksAndCallbacksAPIClient;
-import localhost3000.authentication.ApiKeyModel;
+import io.swagger.petstore3.SwaggerPetstoreOpenApi30Client;
+import io.swagger.petstore3.authentication.ApiKeyModel;
 
 public class Program {
     public static void main(String[] args) {
-        WebhooksAndCallbacksAPIClient client = new WebhooksAndCallbacksAPIClient.Builder()
+        SwaggerPetstoreOpenApi30Client client = new SwaggerPetstoreOpenApi30Client.Builder()
             .apiKeyCredentials(new ApiKeyModel.Builder(
-                    "X-API-Key"
+                    "api_key"
                 )
                 .build())
             .build();
