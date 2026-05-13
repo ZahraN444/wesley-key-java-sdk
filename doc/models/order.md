@@ -1,7 +1,7 @@
 
 # Order
 
-*This model accepts additional fields of type Object.*
+Container for an individual order.
 
 ## Structure
 
@@ -11,27 +11,17 @@
 
 | Name | Type | Tags | Description | Getter | Setter |
 |  --- | --- | --- | --- | --- | --- |
-| `Id` | `Long` | Optional | - | Long getId() | setId(Long id) |
-| `PetId` | `Long` | Optional | - | Long getPetId() | setPetId(Long petId) |
-| `Quantity` | `Integer` | Optional | - | Integer getQuantity() | setQuantity(Integer quantity) |
-| `ShipDate` | `LocalDateTime` | Optional | - | LocalDateTime getShipDate() | setShipDate(LocalDateTime shipDate) |
-| `Status` | [`OrderStatus`](../../doc/models/order-status.md) | Optional | Order Status | OrderStatus getStatus() | setStatus(OrderStatus status) |
-| `Complete` | `Boolean` | Optional | - | Boolean getComplete() | setComplete(Boolean complete) |
-| `AdditionalProperties` | `Map<String, Object>` | Optional | - | Object getAdditionalProperty(String key) | additionalProperty(String key, Object value) |
+| `OrderID` | `Integer` | Optional | Identifier of the order being rated.<br><br>**Default**: `0` | Integer getOrderID() | setOrderID(Integer orderID) |
+| `PickLists` | [`PickLists`](../../doc/models/pick-lists.md) | Optional | Container all order picklists. | PickLists getPickLists() | setPickLists(PickLists pickLists) |
+| `OrderNumber` | `String` | Optional | Order number of the order being rated. | String getOrderNumber() | setOrderNumber(String orderNumber) |
 
-## Example (as JSON)
+## Example (as XML)
 
-```json
-{
-  "id": 180,
-  "petId": 220,
-  "quantity": 136,
-  "shipDate": "2016-03-13T12:52:32.123Z",
-  "status": "placed",
-  "exampleAdditionalProperty": {
-    "key1": "val1",
-    "key2": "val2"
-  }
-}
+```xml
+<wtg:Order xmlns:wtg="https://www.wisetechglobal.com/">
+  <wtg:OrderID xmlns:wtg="https://www.wisetechglobal.com/">0</wtg:OrderID>
+  <wtg:PickLists xmlns:wtg="https://www.wisetechglobal.com/"></wtg:PickLists>
+  <wtg:OrderNumber xmlns:wtg="https://www.wisetechglobal.com/">OrderNumber8</wtg:OrderNumber>
+</wtg:Order>
 ```
 

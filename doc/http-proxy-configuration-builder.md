@@ -24,10 +24,10 @@ To configure the SDK to use a proxy server, initialize the proxy configuration d
 ## Usage Example
 
 ```java
-import io.swagger.petstore3.SwaggerPetstoreOpenApi30Client;
-import io.swagger.petstore3.http.client.HttpProxyConfiguration;
+import com.transtream.apimatic.QuickStartAPIClient;
+import com.transtream.apimatic.http.client.HttpProxyConfiguration;
 
-SwaggerPetstoreOpenApi30Client client = new SwaggerPetstoreOpenApi30Client.Builder()
+QuickStartAPIClient client = new QuickStartAPIClient.Builder()
   .httpClientConfig(configBuilder -> configBuilder
       .proxyConfig(new HttpProxyConfiguration.Builder("http://localhost",
           8080).auth("username", "password")))

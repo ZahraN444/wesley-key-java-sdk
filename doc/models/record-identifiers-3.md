@@ -1,0 +1,25 @@
+
+# Record Identifiers 3
+
+Outer container for transaction identifiers.
+
+## Structure
+
+`RecordIdentifiers3`
+
+## Fields
+
+| Name | Type | Tags | Description | Getter | Setter |
+|  --- | --- | --- | --- | --- | --- |
+| `RecordIdentifier` | [`List<RecordIdentifier1>`](../../doc/models/record-identifier-1.md) | Optional | Inner container for transaction identifiers. | List<RecordIdentifier1> getRecordIdentifier() | setRecordIdentifier(List<RecordIdentifier1> recordIdentifier) |
+
+## Example (as XML)
+
+```xml
+<wtg:RecordIdentifiers xmlns:wtg="https://www.wisetechglobal.com/">
+  <wtg:RecordIdentifier xmlns:wtg="https://www.wisetechglobal.com/"></wtg:RecordIdentifier>
+  <wtg:RecordIdentifier xmlns:wtg="https://www.wisetechglobal.com/"></wtg:RecordIdentifier>
+  <wtg:RecordIdentifier xmlns:wtg="https://www.wisetechglobal.com/"></wtg:RecordIdentifier>
+</wtg:RecordIdentifiers>
+```
+
